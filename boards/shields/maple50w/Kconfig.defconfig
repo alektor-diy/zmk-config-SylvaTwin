@@ -1,6 +1,0 @@
-if SHIELD_maple50w
-
-    config ZMK_KEYBOARD_NAME
-        default "maple50w"
-        
-endif
