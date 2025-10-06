@@ -16,7 +16,7 @@ if SHIELD_Maple52swt_R
 
     config ZMK_KEYBOARD_NAME
         default "Maple52swt_R"
-        
-        config ZMK_SPLIT
-            default y
+    
+    config ZMK_SPLIT
+        default y
 endif
