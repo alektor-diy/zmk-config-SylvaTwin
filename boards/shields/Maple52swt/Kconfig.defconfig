@@ -1,6 +1,12 @@
 if SHIELD_Maple52swt_L
     config ZMK_KEYBOARD_NAME
         default "Maple52swt_L"
+    
+    config ZMK_SPLIT_ROLE_CENTRAL
+        default y
+
+    config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
+        default 1
 
     config ZMK_SPLIT
         default y
@@ -10,12 +16,6 @@ if SHIELD_Maple52swt_R
 
     config ZMK_KEYBOARD_NAME
         default "Maple52swt_R"
-    
-    config ZMK_SPLIT_ROLE_CENTRAL
-        default y
-
-    config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
-        default 1
         
     config ZMK_SPLIT
         default y
