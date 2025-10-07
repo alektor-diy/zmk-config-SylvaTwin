@@ -6,6 +6,12 @@
 
 #include "Maple52swt.dtsi"
 
+/ {
+    chosen {
+        zephyr,display = &oled;
+    };
+};
+
 &kscan0 {
         gpios
           = <&gpio0  3 GPIO_ACTIVE_HIGH>
