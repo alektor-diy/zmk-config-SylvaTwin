@@ -6,6 +6,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: englmaxi
       url-base: https://github.com/englmaxi
+    - name: te9no
+      url-base: https://github.com/te9no
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
@@ -14,6 +16,9 @@ manifest:
       import: app/west.yml
     - name: zmk-dongle-display
       remote: englmaxi
+      revision: main
+    - name: zmk-dongle-display-view
+      remote: te9no
       revision: main
   self:
     path: config
