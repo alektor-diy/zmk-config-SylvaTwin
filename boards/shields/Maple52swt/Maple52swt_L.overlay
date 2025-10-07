@@ -15,16 +15,9 @@
         compatible = "alps,ec11";
         a-gpios = <&gpio1 14 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
         b-gpios = <&gpio1 15 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
-        steps = <4>;               /* 例: 1 detent = 4パルスなら4 */
+        steps = <4>;
         status = "okay";
         label = "left_encoder";
-    };
-
-    encoder_transform0: encoder_transform_0 {
-        compatible = "zmk,encoder-transform";
-        input = <&encoder0>;
-        bindings = <&kp C_VOLUME_UP &kp C_VOLUME_DOWN>;
-        status = "okay";
     };
 };
 
