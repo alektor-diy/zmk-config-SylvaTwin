@@ -32,30 +32,3 @@
     };
     
 };
-
-&i2c0  {
-    status = "okay";
-    
-    sda-pin = <44>;
-    scl-pin = <45>;
-    
-    pinctrl-0 = <&i2c0_default>;
-    pinctrl-1 = <&i2c0_sleep>;
-    pinctrl-names = "default", "sleep";
-    clock-frequency = <100000>;
-    
-    oled: ssd1306@3c {
-        compatible = "solomon,ssd1306fb";
-        reg = <0x3c>;
-        width = <128>;
-        height = <32>;
-        segment-offset = <0>;
-        page-offset = <0>;
-        display-offset = <0>;
-        multiplex-ratio = <31>;
-        prechargep = <0x22>;
-        segment-remap;
-        com-invdir;
-        inversion-on;
-    };
-};
