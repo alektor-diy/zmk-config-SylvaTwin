@@ -10,15 +10,6 @@
     chosen {
         zephyr,display = &oled;
     };
-    
-    encoder0: encoder_0 {
-        compatible = "alps,ec11";
-        a-gpios = <&gpio1 14 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
-        b-gpios = <&gpio1 15 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
-        steps = <4>;
-        status = "okay";
-        label = "left_encoder";
-    };
 };
 
 &kscan0 {
@@ -64,3 +55,11 @@
         inversion-on;
     };
 };
+
+&encoder0 {
+    status = "okay";
+    a-gpios = <&gpio1 14 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+    b-gpios = <&gpio1 15 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+    steps = <4>;
+    label = "left_encoder";
+}

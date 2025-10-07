@@ -30,4 +30,9 @@
         >;
     };
     
+    encoder0: encoder_0 {
+        compatible = "alps,ec11";
+        status = "disabled";
+    };
+    
 };
