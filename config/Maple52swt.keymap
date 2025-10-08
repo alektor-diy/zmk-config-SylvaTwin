@@ -17,6 +17,11 @@
             key-positions = <10 11>;
         };
     };
+    
+    sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&encoder0>;
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -49,11 +54,6 @@
                 &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &none       &studio_unlock  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-        };
-        
-        sensors {
-            compatible = "zmk,keymap-sensors";
-            sensors = <&encoder0>;
         };
     };
 };
