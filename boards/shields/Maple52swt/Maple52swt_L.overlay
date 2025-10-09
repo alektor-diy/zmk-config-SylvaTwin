@@ -10,6 +10,38 @@
     chosen {
         zephyr,display = &oled;
     };
+    
+    split_inputs {
+        #address-cells = <1>;
+        #size-cells = <0>;
+
+        trackball_split: trackball_split@0 {
+            compatible = "zmk,input-split";
+            reg = <0>;
+        };
+    };
+
+    trackball_listener: trackball_listener {
+        compatible = "zmk,input-listener";
+        status = "okay";
+        device = <&trackball_split>;
+        input-processors = <&zip_temp_layer 3 700>;
+        scroll {
+            layers = <1>;
+            input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 16>, <&zip_xy_to_scroll_mapper>;
+        };
+        
+        arrow {
+            layers = <4>;
+            input-processors = <&zip_keybind_keys>;
+            process-next;
+        };
+        
+        arrow-prevent-move {
+            layers = <4>;
+            input-processors = <&zip_xy_scaler 0 1>;
+        };
+    };
 };
 
 &kscan0 {
