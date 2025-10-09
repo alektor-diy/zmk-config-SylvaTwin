@@ -4,6 +4,9 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include <dt-bindings/zmk/bt.h>
+#include <input/processors.dtsi>
+#include <dt-bindings/zmk/input_transform.h>
 #include "Maple52swt.dtsi"
 
 &default_transform {
