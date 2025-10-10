@@ -15,7 +15,6 @@
 / {
     chosen {
         zephyr,display = &oled;
-        zmk,pointing-device = &pointing_aggregator;
     };
     
     split_inputs {
