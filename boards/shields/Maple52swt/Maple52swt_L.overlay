@@ -32,26 +32,12 @@
         status = "okay";
         device = <&trackball_split>;
         
-        input-processors = <&zip_temp_layer 3 700>,
-                           <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>,
-                           <&zip_xy_scaler 1 1>;
+        input-processors = <&zip_xy_scaler 1 1>;
                 
         scroll {
             layers = <1>;
-            input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>,
-                               <&zip_xy_scaler 1 16>,
+            input-processors = <&zip_xy_scaler 1 16>,
                                <&zip_xy_to_scroll_mapper>;
-        };
-        
-        arrow {
-            layers = <4>;
-            input-processors = <&zip_keybind_keys>;
-            process-next;
-        };
-        
-        arrow-prevent-move {
-            layers = <4>;
-            input-processors = <&zip_xy_scaler 0 1>;
         };
     };
     
