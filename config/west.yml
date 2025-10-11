@@ -8,6 +8,10 @@ manifest:
       url-base: https://github.com/englmaxi
     - name: te9no
       url-base: https://github.com/te9no
+    - name: badjeff
+      url-base: https://github.com/badjeff
+    - name: zettaface
+      url-base: https://github.com/zettaface
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
@@ -19,6 +23,12 @@ manifest:
       revision: main
     - name: zmk-dongle-display-view
       remote: te9no
+      revision: main
+    - name: zmk-pmw3610-driver
+      remote: badjeff
+      revision: main
+    - name: zmk-input-processor-keybind
+      remote: zettaface
       revision: main
   self:
     path: config
