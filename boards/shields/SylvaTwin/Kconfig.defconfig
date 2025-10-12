@@ -1,6 +1,6 @@
-if SHIELD_Maple52swt_L
+if SHIELD_SylvaTwin_L
     config ZMK_KEYBOARD_NAME
-        default "Maple52swt_L"
+        default "SylvaTwin_L"
     
     config ZMK_SPLIT_ROLE_CENTRAL
         default y
@@ -12,10 +12,10 @@ if SHIELD_Maple52swt_L
         default y
 endif
 
-if SHIELD_Maple52swt_R
+if SHIELD_SylvaTwin_R
 
     config ZMK_KEYBOARD_NAME
-        default "Maple52swt_R"
+        default "SylvaTwin_R"
         
     config ZMK_SPLIT
         default y

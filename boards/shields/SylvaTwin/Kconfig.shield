@@ -1,8 +1,8 @@
 # Copyright (c) 2020 Pete Johanson
 # SPDX-License-Identifier: MIT
 
-config SHIELD_Maple52swt_L
-    def_bool $(shields_list_contains,Maple52swt_L)
+config SHIELD_SylvaTwin_L
+    def_bool $(shields_list_contains,SylvaTwin_L)
 
-config SHIELD_Maple52swt_R
-    def_bool $(shields_list_contains,Maple52swt_R)
+config SHIELD_SylvaTwin_R
+    def_bool $(shields_list_contains,SylvaTwin_R)
