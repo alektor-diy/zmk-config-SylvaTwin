@@ -21,6 +21,7 @@
     non_lipo_battery: non_lipo_battery {
         compatible = "zmk,non-lipo-battery";
         io-channels = <&adc 0>;  // 使用するADCチャンネル
+    };
     
     split_inputs {
         #address-cells = <1>;
