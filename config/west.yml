@@ -12,6 +12,8 @@ manifest:
       url-base: https://github.com/badjeff
     - name: zettaface
       url-base: https://github.com/zettaface
+    - name: sekigon-gonnoc
+      url-base: https://github.com/sekigon-gonnoc
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
@@ -27,5 +29,7 @@ manifest:
     - name: zmk-input-processor-keybind
       remote: zettaface
       revision: main
+    - name: zmk-feature-non-lipo-battery-management
+      remote: sekigon-gonnoc
   self:
     path: config
