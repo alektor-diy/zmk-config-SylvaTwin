@@ -18,24 +18,24 @@
             key-positions = <10 11>;
         };
 
-        LeftClick {
-            bindings = <&mkp LCLK>;
-            key-positions = <30 44>;
-        };
-
         RightClick {
             bindings = <&mkp RCLK>;
-            key-positions = <29 43>;
+            key-positions = <30 44>;
         };
 
         MiddleClick {
             bindings = <&mkp MCLK>;
-            key-positions = <28 42>;
+            key-positions = <29 43>;
         };
 
-        LeftClick2 {
+        LeftClick {
             bindings = <&mkp LCLK>;
             key-positions = <31 45>;
+        };
+
+        MiddleClick2 {
+            bindings = <&mkp MCLK>;
+            key-positions = <32 46>;
         };
     };
 
