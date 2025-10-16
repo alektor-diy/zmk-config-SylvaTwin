@@ -32,6 +32,11 @@
             bindings = <&mkp MCLK>;
             key-positions = <28 42>;
         };
+
+        LeftClick2 {
+            bindings = <&mkp LCLK>;
+            key-positions = <31 45>;
+        };
     };
 
     keymap {
