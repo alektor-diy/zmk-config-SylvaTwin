@@ -33,7 +33,7 @@
             key-positions = <28 42>;
         };
 
-        LeftClick {
+        LeftClick2 {
             bindings = <&mkp LCLK>;
             key-positions = <31 45>;
         };
