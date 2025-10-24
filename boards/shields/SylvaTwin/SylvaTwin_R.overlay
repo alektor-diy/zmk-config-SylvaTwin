@@ -23,6 +23,7 @@
           , <&gpio0  5 GPIO_ACTIVE_HIGH>
           , <&gpio1 11 GPIO_ACTIVE_HIGH>
           ;
+        wakeup-source;
 };
 
 &pinctrl {
