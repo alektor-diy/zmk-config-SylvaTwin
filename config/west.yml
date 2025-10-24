@@ -32,7 +32,7 @@ manifest:
       remote: zettaface
       revision: main
     - name: zmk-feature-non-lipo-battery-management
-      remote: alektor-diy
+      remote: sekigon-gonnoc
       revision: main
   self:
     path: config
