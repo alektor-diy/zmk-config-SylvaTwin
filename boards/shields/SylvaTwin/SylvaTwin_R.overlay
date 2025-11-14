@@ -93,3 +93,10 @@
         device = <&trackball_split>;
     };
 };
+
+&vbatt {
+    compatible = "zmk,battery-voltage-divider";
+    io-channels = <&adc 0>;
+    output-ohms = <137000>;
+    full-ohms = <(1000000 + 137000)>;
+};

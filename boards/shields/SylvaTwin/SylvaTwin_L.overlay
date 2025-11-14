@@ -99,5 +99,12 @@
     status = "okay";
 };
 
+&vbatt {
+    compatible = "zmk,battery-voltage-divider";
+    io-channels = <&adc 0>;
+    output-ohms = <137000>;
+    full-ohms = <(1000000 + 137000)>;
+};
+
 &xiao_serial { status = "disabled"; };
 &uart0 { status = "disabled";};
