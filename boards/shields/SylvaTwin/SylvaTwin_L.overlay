@@ -20,7 +20,7 @@
     
     non_lipo_battery: non_lipo_battery {
         compatible = "zmk,non-lipo-battery";
-        io-channels = <&adc 2>;  // 使用するADCチャンネル
+        io-channels = <&adc 10>;  // 使用するADCチャンネル
     };
     
     split_inputs {
@@ -103,9 +103,8 @@
     #address-cells = <1>;
     #size-cells = <0>;
 
-    // channel@2 を P0.02 (AIN0) 用に定義
-    channel@2 {
-        reg = <2>;
+    channel@10 {
+        reg = <10>;
         zephyr,gain = "ADC_GAIN_1_6";
         zephyr,reference = "ADC_REF_INTERNAL";
         zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
