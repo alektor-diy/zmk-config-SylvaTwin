@@ -99,5 +99,16 @@
     status = "okay";
 };
 
+&adc {
+    // channel@2 を P0.02 (AIN0) 用に新しく定義する例
+    channel@2 {
+        reg = <2>;
+        zephyr,gain = "ADC_GAIN_1_6";
+        zephyr,reference = "ADC_REF_INTERNAL";
+        zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+        zephyr,input-positive = <NRF_SAADC_AIN0>;  // ★ P0.02 に対応
+    };
+};
+
 &xiao_serial { status = "disabled"; };
 &uart0 { status = "disabled";};
