@@ -21,7 +21,6 @@
     non_lipo_battery: non_lipo_battery {
         compatible = "zmk,non-lipo-battery";
         io-channels = <&adc 0>;  // 使用するADCチャンネル
-        status = "okay";
     };
     
     split_inputs {
@@ -102,3 +101,4 @@
 
 &xiao_serial { status = "disabled"; };
 &uart0 { status = "disabled";};
+&vbatt { status = "disabled";};
