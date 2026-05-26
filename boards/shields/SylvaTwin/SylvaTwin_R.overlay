@@ -70,6 +70,13 @@
     chosen {
         zmk,battery = &non_lipo_battery;
     };
+
+    insight_display: insight_display {
+        compatible = "zmk,insight-display";
+        side = "right";
+        layout = "128x32";
+        screen-mode = "single";
+    };
     
     non_lipo_battery: non_lipo_battery {
         compatible = "zmk,non-lipo-battery";

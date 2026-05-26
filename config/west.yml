@@ -16,14 +16,16 @@ manifest:
       url-base: https://github.com/sekigon-gonnoc
     - name: efogdev
       url-base: https://github.com/efogdev
+    - name: alektor-diy
+      url-base: https://github.com/alektor-diy
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
-    - name: zmk-dongle-display
-      remote: te9no
+    - name: zmk-insight-display
+      remote: alektor-diy
       revision: main
     - name: zmk-pmw3610-driver
       remote: efogdev
